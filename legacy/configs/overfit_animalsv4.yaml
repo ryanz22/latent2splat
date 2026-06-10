@@ -1,0 +1,34 @@
+# Config-driven overfit on animals_v4 (the hand-picked "Final" set): depth + GT-mask
+# supervision ON, real latents, WHITE background. uid is the v4 lion — same object as
+# the animals_v1 overfit / Method E v2 result (~PSNR 21), so this is directly
+# comparable now that depth+mask are available.
+#   python run_train.py configs/overfit_animalsv4.yaml
+data:
+  dataset_root: /home/rrzhang/projects/data/Animals v4 Final
+  manifest: /home/rrzhang/projects/data/Animals v4 Final/animals_v4_approved_encoded.json
+  uid: af3281f986cc40b9b3cbca1f72e77f46   # lion (radius ~1.517)
+  bg: 1.0                 # animals_v4 renders on WHITE (metadata background="white")
+  bg_variant: null        # single white-bg frames at the object root (no variant subdirs)
+  random_bg: false
+model:
+  arch: e
+  opacity_mode: sigmoid   # free opacity, now safe to use WITH depth supervision (Lyra recipe)
+optim:
+  lr: 0.0001
+  steps: 1500
+  warmup_steps: 100
+  grad_clip: 1.0
+  log_every: 50
+loss:
+  l1: 1.0
+  ssim: 0.2
+  fg_weight: 10.0
+  mask_bce: 0.05          # ON — exact GT silhouette (alpha BCE)
+  depth: 1.0             # ON — reference-view GT depth supervision (Huber)
+  opacity_reg: 0.01      # ON — masked opacity reg (bg-anchored Gaussians only)
+  scale_reg: 0.0
+  fg_source: gt          # use the dataset's exact masks
+  opacity_reg_masked: true
+  depth_delta: 0.1
+out_dir: runs/cfg_animalsv4
+device: cuda

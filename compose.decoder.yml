@@ -1,0 +1,34 @@
+name: ${COMPOSE_PROJECT_NAME:-latent2splat}
+
+services:
+  decoder:
+    image: ${L2S_DECODER_IMAGE:-latent2splat-decoder:cu130}
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.decoder
+    gpus: all
+    ipc: host
+    shm_size: "16gb"
+    working_dir: /workspace/latent2splat
+    environment:
+      PYTHONPATH: /workspace/latent2splat
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      TORCH_CUDA_ARCH_LIST: "12.0"
+      PYTORCH_CUDA_ALLOC_CONF: expandable_segments:True
+      MAX_JOBS: "1"
+      CMAKE_BUILD_PARALLEL_LEVEL: "1"
+      NINJAFLAGS: "-j1"
+      TORCH_EXTENSIONS_DIR: /cache/torch-extensions
+      PHASE2_DATA_ROOT: ${PHASE2_DATA_ROOT:-/data/yubot-datasets/Animals v4 Final}
+      PHASE2_MANIFEST: ${PHASE2_MANIFEST:-/data/yubot-datasets/Animals v4 Final/animals_v4_approved_encoded.json}
+      WANDB_MODE: ${WANDB_MODE:-offline}
+      WANDB_API_KEY: ${WANDB_API_KEY:-}
+      WANDB_DIR: /workspace/latent2splat/runs/wandb
+      HF_HOME: /cache/huggingface
+    volumes:
+      - .:/workspace/latent2splat
+      - ${L2S_DATA_ROOT_HOST:-/mnt/data1/yubot-datasets}:${L2S_DATA_ROOT_CONTAINER:-/data/yubot-datasets}:ro
+      - ${L2S_RUNS_ROOT_HOST:-./runs}:/workspace/latent2splat/runs
+      - ${L2S_CACHE_ROOT_HOST:-/mnt/data1/cache/latent2splat}:/cache
+    command: ["bash"]

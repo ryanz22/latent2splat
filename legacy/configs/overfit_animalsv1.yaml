@@ -1,0 +1,31 @@
+# Config-driven overfit on the animals_v1 lion (real latent, photometric path).
+# Reproduces the free-opacity / no-random-bg recipe.
+#   python run_train.py configs/overfit_animalsv1.yaml
+data:
+  dataset_root: /home/rrzhang/projects/data/animalsv1/animals_v1
+  manifest: /home/rrzhang/projects/data/animalsv1/manifests/animals_v1_encoded.json
+  uid: af3281f986cc40b9b3cbca1f72e77f46   # lion
+  bg: 0.0
+  bg_variant: null        # animals_v1 has no bg variants (top-level black frames)
+  random_bg: false
+model:
+  arch: e
+  opacity_mode: sigmoid   # free opacity (pdf = depth-PDF)
+optim:
+  lr: 0.0001
+  steps: 1500
+  warmup_steps: 100
+  grad_clip: 1.0
+  log_every: 50
+loss:
+  l1: 1.0
+  ssim: 0.2
+  fg_weight: 10.0
+  mask_bce: 0.0           # OFF — no GT masks in animals_v1
+  depth: 0.0              # OFF — no depth in animals_v1
+  opacity_reg: 0.0
+  scale_reg: 0.0
+  fg_source: threshold    # derive fg from bg color (no GT masks here)
+  opacity_reg_masked: true
+out_dir: runs/cfg_animalsv1
+device: cuda

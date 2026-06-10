@@ -1,0 +1,3 @@
+[submodule "vendor/LTX-2"]
+	path = vendor/LTX-2
+	url = https://github.com/Lightricks/LTX-2.git

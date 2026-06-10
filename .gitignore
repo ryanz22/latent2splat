@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.so
+*.egg-info/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Modal / wandb / local scratch
+.modal/
+wandb/
+scratch/
+outputs/
+
+# Pulled Modal eval renders + metrics (regenerable from the latent2splat-phase123-runs volume)
+modal_viz_*
+modal_metrics_*
+modal_tmp_*
+modal_run_args/
+
+# Local decoder training outputs (checkpoints + viz)
+runs/
+decoder/**/*.pt
+
+# Generated experiment artifacts. Keep lightweight manifests and run scripts.
+artifacts/*
+!artifacts/manifests/
+!artifacts/manifests/**
+!artifacts/run_scripts/
+!artifacts/run_scripts/**
+artifacts/run_scripts/__pycache__/
+
+# Phase 0 inspection + training artifacts (latents, generated videos, ckpts)
+tools/_out/
+outputs/
+*.safetensors
+*.ckpt
+
+# LaTeX build products
+*.aux
+*.log
+*.blg
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Local vendored scratch copies
+vendor/LTX-2-ledger-d230aec/
+
+# Raw README/poster source material (kept local)
+readme_materials/

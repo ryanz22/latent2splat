@@ -1,0 +1,33 @@
+# Config-driven overfit for the NEW format (Trial R4 / animals_v3): depth + GT-mask
+# supervision ON. NOTE: Trial R4 is a format preview with NO latents — this config
+# is ready for animals_v3; repoint dataset_root/manifest at it when latents land.
+#   python run_train.py configs/overfit_trial_r4.yaml
+data:
+  dataset_root: /home/rrzhang/projects/data/Trial R4/trial_r4
+  manifest: /home/rrzhang/projects/data/Trial R4/manifests/trial_r4_rendered.json
+  uid: 6801a0e6738644aa8f3c58934663a5b5   # lion
+  bg: 0.0
+  bg_variant: black       # black | white | gray available
+  random_bg: false
+model:
+  arch: e
+  opacity_mode: sigmoid
+optim:
+  lr: 0.0001
+  steps: 1500
+  warmup_steps: 100
+  grad_clip: 1.0
+  log_every: 50
+loss:
+  l1: 1.0
+  ssim: 0.2
+  fg_weight: 10.0
+  mask_bce: 0.05          # ON — exact GT silhouette (alpha BCE)
+  depth: 1.0             # ON — GT depth supervision (Huber)
+  opacity_reg: 0.01      # ON — masked opacity reg (bg-anchored Gaussians only)
+  scale_reg: 0.0
+  fg_source: gt          # use the dataset's exact masks
+  opacity_reg_masked: true
+  depth_delta: 0.1
+out_dir: runs/cfg_trial_r4
+device: cuda

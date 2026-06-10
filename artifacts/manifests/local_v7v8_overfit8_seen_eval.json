@@ -1,0 +1,112 @@
+{
+  "eval": [
+    {
+      "tier": "objaverse_v7",
+      "uid": "cd85bc33522040e8a5d60f4bd66f5ecc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "b4c755eab3d54436b7ec8f9d2fa772dc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "da0ddb490f214ed9a5c4afddad1aea27"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "61699f9b3187407eb33ee5035be19489"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0023717f4f564cc99f4ded70db04f590"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0046f208ef8d4988ba7bb9d297f29ec7"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "004fb4d72f6c4e55a15b9025a868d1a3"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00602ef508784e5384665aacaaf1f3a0"
+    }
+  ],
+  "meta": {
+    "counts_by_tier": {
+      "objaverse_v7": 4,
+      "objaverse_v8": 4
+    },
+    "purpose": "1B learned-prior overfit gate: train/eval/test share the same mixed v7+v8 objects; heldout metrics are seen-object novel-view metrics.",
+    "source_manifest": "artifacts/manifests/local_v7v8_rawrgbd_complete9.json"
+  },
+  "test": [
+    {
+      "tier": "objaverse_v7",
+      "uid": "cd85bc33522040e8a5d60f4bd66f5ecc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "b4c755eab3d54436b7ec8f9d2fa772dc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "da0ddb490f214ed9a5c4afddad1aea27"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "61699f9b3187407eb33ee5035be19489"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0023717f4f564cc99f4ded70db04f590"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0046f208ef8d4988ba7bb9d297f29ec7"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "004fb4d72f6c4e55a15b9025a868d1a3"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00602ef508784e5384665aacaaf1f3a0"
+    }
+  ],
+  "train": [
+    {
+      "tier": "objaverse_v7",
+      "uid": "cd85bc33522040e8a5d60f4bd66f5ecc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "b4c755eab3d54436b7ec8f9d2fa772dc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "da0ddb490f214ed9a5c4afddad1aea27"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "61699f9b3187407eb33ee5035be19489"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0023717f4f564cc99f4ded70db04f590"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0046f208ef8d4988ba7bb9d297f29ec7"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "004fb4d72f6c4e55a15b9025a868d1a3"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00602ef508784e5384665aacaaf1f3a0"
+    }
+  ]
+}

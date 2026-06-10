@@ -1,0 +1,6 @@
+FROM latent2splat-decoder:cu130
+
+RUN python -m pip install --no-cache-dir \
+    "git+https://github.com/ByteDance-Seed/Depth-Anything-3.git"
+
+CMD ["bash"]

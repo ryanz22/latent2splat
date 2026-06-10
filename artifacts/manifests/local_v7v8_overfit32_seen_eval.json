@@ -1,0 +1,400 @@
+{
+  "eval": [
+    {
+      "tier": "objaverse_v7",
+      "uid": "cd85bc33522040e8a5d60f4bd66f5ecc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "b4c755eab3d54436b7ec8f9d2fa772dc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "da0ddb490f214ed9a5c4afddad1aea27"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "61699f9b3187407eb33ee5035be19489"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "94279078f1f242a3984954068365573a"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "cdb717c843c64685acc4ae712f028864"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "91fefa1ec3324b1793e854d5afbf508e"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "774bc66d11c24855bf722e35249fddf7"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "fe347cd2495647d18d4b3e7d06e52e04"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "27b07e0b5046416aa86384edc99cce20"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "45ef4b97649b494992315925009f81ab"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "c5795386c04747a1841c6a7a77c7904e"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "62f7ae66c3424809ba563314a0b52c7d"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "ed92cac6b8d64ea48ea4f91ce9bf350b"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "3fb280d6294a4a32a16249f4a1a62f7d"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "3ff2ab8f53de44e6b74dd3564598645f"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0023717f4f564cc99f4ded70db04f590"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0046f208ef8d4988ba7bb9d297f29ec7"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "004fb4d72f6c4e55a15b9025a868d1a3"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00602ef508784e5384665aacaaf1f3a0"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00880e3095534192973a34ba730c45c9"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00c86d330b034a0695bc008078d45e7c"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00ce4eefc9b0441f8a86be845e6ac51a"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00d1be4411f848efaeb72b936d4d1692"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00d1cb5aa82745228a3b764c97f867de"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0136bc280f0d4977b528af83bd3b9642"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "016630f444f946529e4457744eefa643"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "01a25ec4b5e343cba858a53cb8511058"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "01ae21fd01614dc39f8d1a720a7804dd"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0241e66e7f93462ea3cddfb1f326d753"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0284d6ba1b13415da4be3c7ba6a7a622"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0289474b7e6c4f0882275bc1ccde6b5c"
+    }
+  ],
+  "meta": {
+    "counts_by_tier": {
+      "objaverse_v7": 16,
+      "objaverse_v8": 16
+    },
+    "purpose": "1B learned-prior overfit32 gate: train/eval/test share the same mixed v7+v8 objects; heldout metrics are seen-object novel-view metrics.",
+    "source_manifest": "artifacts/manifests/local_v7v8_rawrgbd_complete9.json"
+  },
+  "test": [
+    {
+      "tier": "objaverse_v7",
+      "uid": "cd85bc33522040e8a5d60f4bd66f5ecc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "b4c755eab3d54436b7ec8f9d2fa772dc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "da0ddb490f214ed9a5c4afddad1aea27"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "61699f9b3187407eb33ee5035be19489"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "94279078f1f242a3984954068365573a"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "cdb717c843c64685acc4ae712f028864"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "91fefa1ec3324b1793e854d5afbf508e"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "774bc66d11c24855bf722e35249fddf7"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "fe347cd2495647d18d4b3e7d06e52e04"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "27b07e0b5046416aa86384edc99cce20"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "45ef4b97649b494992315925009f81ab"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "c5795386c04747a1841c6a7a77c7904e"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "62f7ae66c3424809ba563314a0b52c7d"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "ed92cac6b8d64ea48ea4f91ce9bf350b"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "3fb280d6294a4a32a16249f4a1a62f7d"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "3ff2ab8f53de44e6b74dd3564598645f"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0023717f4f564cc99f4ded70db04f590"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0046f208ef8d4988ba7bb9d297f29ec7"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "004fb4d72f6c4e55a15b9025a868d1a3"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00602ef508784e5384665aacaaf1f3a0"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00880e3095534192973a34ba730c45c9"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00c86d330b034a0695bc008078d45e7c"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00ce4eefc9b0441f8a86be845e6ac51a"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00d1be4411f848efaeb72b936d4d1692"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00d1cb5aa82745228a3b764c97f867de"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0136bc280f0d4977b528af83bd3b9642"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "016630f444f946529e4457744eefa643"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "01a25ec4b5e343cba858a53cb8511058"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "01ae21fd01614dc39f8d1a720a7804dd"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0241e66e7f93462ea3cddfb1f326d753"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0284d6ba1b13415da4be3c7ba6a7a622"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0289474b7e6c4f0882275bc1ccde6b5c"
+    }
+  ],
+  "train": [
+    {
+      "tier": "objaverse_v7",
+      "uid": "cd85bc33522040e8a5d60f4bd66f5ecc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "b4c755eab3d54436b7ec8f9d2fa772dc"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "da0ddb490f214ed9a5c4afddad1aea27"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "61699f9b3187407eb33ee5035be19489"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "94279078f1f242a3984954068365573a"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "cdb717c843c64685acc4ae712f028864"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "91fefa1ec3324b1793e854d5afbf508e"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "774bc66d11c24855bf722e35249fddf7"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "fe347cd2495647d18d4b3e7d06e52e04"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "27b07e0b5046416aa86384edc99cce20"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "45ef4b97649b494992315925009f81ab"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "c5795386c04747a1841c6a7a77c7904e"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "62f7ae66c3424809ba563314a0b52c7d"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "ed92cac6b8d64ea48ea4f91ce9bf350b"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "3fb280d6294a4a32a16249f4a1a62f7d"
+    },
+    {
+      "tier": "objaverse_v7",
+      "uid": "3ff2ab8f53de44e6b74dd3564598645f"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0023717f4f564cc99f4ded70db04f590"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0046f208ef8d4988ba7bb9d297f29ec7"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "004fb4d72f6c4e55a15b9025a868d1a3"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00602ef508784e5384665aacaaf1f3a0"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00880e3095534192973a34ba730c45c9"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00c86d330b034a0695bc008078d45e7c"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00ce4eefc9b0441f8a86be845e6ac51a"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00d1be4411f848efaeb72b936d4d1692"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "00d1cb5aa82745228a3b764c97f867de"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0136bc280f0d4977b528af83bd3b9642"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "016630f444f946529e4457744eefa643"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "01a25ec4b5e343cba858a53cb8511058"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "01ae21fd01614dc39f8d1a720a7804dd"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0241e66e7f93462ea3cddfb1f326d753"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0284d6ba1b13415da4be3c7ba6a7a622"
+    },
+    {
+      "tier": "objaverse_v8",
+      "uid": "0289474b7e6c4f0882275bc1ccde6b5c"
+    }
+  ]
+}
